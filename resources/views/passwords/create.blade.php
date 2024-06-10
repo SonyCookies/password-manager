@@ -10,8 +10,13 @@
             <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                 <div class="max-w-md">
                     <div class="container mx-auto px-4 py-8">
-                        <h2 class="text-2xl font-bold mb-6">{{ isset($password) ? 'Edit Password' : 'Add New Password' }}
-                        </h2>
+                        <div class="flex items-center gap-2">
+                            <a href="{{ route('passwords.index') }}"> <span class="material-symbols-outlined">
+                                    arrow_back_ios
+                                </span></a>
+                            <h2 class="text-2xl font-bold mb-0">
+                                {{ isset($password) ? 'Edit Password' : 'Add New Password' }}</h2>
+                        </div>
                         <form
                             action="{{ isset($password) ? route('passwords.update', $password) : route('passwords.store') }}"
                             method="POST" class="space-y-6 ">
