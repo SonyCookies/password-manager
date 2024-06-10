@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example of some common styles */
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #3490dc;
+}
+
+.btn-warning {
+    background-color: #ffed4a;
+}
+
+.btn-danger {
+    background-color: #e3342f;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table th,
+.table td {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem;
+}
+
+.table th {
+    background-color: #edf2f7;
+}
+
+/* Styles for action buttons in the table */
+.table .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.table .actions .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.table .actions .btn-warning {
+  background-color: #ffed4a;
+}
+
+.table .actions .btn-danger {
+  background-color: #e3342f;
+}
+
+.table .actions form {
+  display: inline;
+}
